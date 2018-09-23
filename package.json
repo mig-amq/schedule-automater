@@ -1,0 +1,45 @@
+{
+  "bin": "index.js",
+  "name": "schedule-automator",
+  "version": "0.0.1",
+  "description": "An automated schedule for DLSU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js --presets env",
+    "make": "pkg . --out-path=bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mig-amq/schedule-automator.git"
+  },
+  "author": "Miguel Quiambao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mig-amq/schedule-automator/issues"
+  },
+  "homepage": "https://github.com/mig-amq/schedule-automator#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "cuid": "^2.1.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "limax": "^1.6.0",
+    "sanitize-html": "^1.19.0",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "assets": "public/**/*"
+  }
+}
