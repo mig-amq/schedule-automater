@@ -1,0 +1,26 @@
+#sidebar {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid #aaa;
+}
+
+#sidebar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sidebar form input {
+  border-radius: 0;
+  height: auto;
+  padding: 10px;
+  line-height: normal;
+}
+
+#sidebar form input[type=text] {
+  border-right: 0;
+}
+/*# sourceMappingURL=main.css.map */

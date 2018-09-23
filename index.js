@@ -23,4 +23,8 @@ config.LOG.scs("HBS initialized...")
 app.use(session(config.SESSION))
 config.LOG.scs("Express Session initialized...")
 
+app.use(express.static(config.EXPRESS.statics))
+config.LOG.scs("Static files initialized...")
+
 app.use('/', routes)
+config.LOG.scs("Routes initialized...")

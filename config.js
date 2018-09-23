@@ -37,10 +37,12 @@ export default {
       open_sec: "p_open",
       closed_sec: "p_closed",
     },
+    table_loc: "body > table:nth-child(5) > tbody > tr > td > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > center > table > tbody"
   },
 
   EXPRESS: {
-    views: "/public/views/",
-    routes: "/build/controller/"
+    views: "./public/views/",
+    routes: "./build/controller/",
+    statics: "./public/assets/",
   }
 }
